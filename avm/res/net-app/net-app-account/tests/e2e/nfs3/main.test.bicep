@@ -12,7 +12,7 @@ metadata description = 'This instance deploys the module with nfs31.'
 param resourceGroupName string = 'dep-${namePrefix}-netapp.netappaccounts-${serviceShort}-rg'
 
 @description('Optional. The location to deploy resources to.')
-param resourceLocation string = deployment().location
+param resourceLocation string = 'Australia East'
 
 @description('Optional. A short identifier for the kind of deployment. Should be kept short to not run into resource-name length-constraints.')
 param serviceShort string = 'nanaanfs3'
